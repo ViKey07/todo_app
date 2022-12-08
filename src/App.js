@@ -2,7 +2,7 @@
 import './App.css';
 import { useState } from 'react';
 import {Task} from './Task';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 
 
 function App() {
@@ -52,7 +52,9 @@ function App() {
 
   return (
   <div className='App'>
-    <Navbar/>
+
+    <div className='nav'><h1>To - Do List</h1></div>
+    {/* <Navbar/> */}
     <div className='addTask'>
       <input placeholder='Enter Task' onChange={handleChange}/>
       <button id='addButton' onClick={addTask}> Add Task </button>

@@ -3,7 +3,10 @@
   align-items: center;
   flex-direction: column;
   width: 100vw;
+  height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 }
 
 body {
@@ -31,8 +34,7 @@ input{
 
 .addTask {
   height: 30vh;
-  background-color: #D9AFD9;
-  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  
   width: 100%;
   display: flex;
   justify-content: center;
@@ -40,24 +42,16 @@ input{
 }
 
 .list {
+  border-radius: 10px;
   height: auto;
   width: 100%;
   display: flex;
   align-items: center;
-  padding-top: 50px;
   flex-direction: column;
 }
 
 .task {
-  width: 500px;
-  height: 50px;
   display: flex;
-  margin: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid silver;
-  border-radius: 10px;
 }
 
 .task button {
@@ -65,6 +59,7 @@ input{
   margin-left: 5px;
   text-align: center;
   /* width: 100%; */
+  
 }
 
 #completeButton1{
@@ -102,4 +97,10 @@ input{
   width: 100%;
   text-align: center;
   font-family: w3-monospace;
+}
+
+.nav h1{
+  text-align: center;
+  color: black;
+  font-family: monospace;
 }
