@@ -64,6 +64,7 @@ input{
   width: auto;
   margin-left: 5px;
   text-align: center;
+  /* width: 100%; */
 }
 
 #completeButton1{
@@ -95,4 +96,10 @@ input{
   border-radius: 5px;
   margin: 5px;
   padding: 10px;
+}
+
+.MuiBox-root.css-i9gxme {
+  width: 100%;
+  text-align: center;
+  font-family: w3-monospace;
 }

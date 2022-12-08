@@ -1,9 +1,12 @@
 
 import './App.css';
 import { useState } from 'react';
-import {Task} from './Task'
+import {Task} from './Task';
+import Navbar from './Navbar';
+
 
 function App() {
+  
   const [todoList, setTodoList] = useState([]);
   const [newTask, setNewTask] = useState('');
 
@@ -49,6 +52,7 @@ function App() {
 
   return (
   <div className='App'>
+    <Navbar/>
     <div className='addTask'>
       <input placeholder='Enter Task' onChange={handleChange}/>
       <button id='addButton' onClick={addTask}> Add Task </button>
@@ -60,6 +64,10 @@ function App() {
     </div>
   </div>
   );
+  
 }
 
 export default App;
+
+
+
